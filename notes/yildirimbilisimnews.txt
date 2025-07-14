@@ -1,0 +1,6 @@
+
+=== RAPOR ===
+Hedef: yildirimbilisimnews.com
+Açık portlar: [80, 443]
+Port açma işlemi: Yapılmadı
+Bot atma işlemi: Yapılmadı

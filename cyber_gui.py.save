@@ -1,0 +1,22 @@
+import tkinter as tk
+from tkinter import scrolledtext
+import subprocess
+
+    try:
+        subprocess.run(["sudo", "/usr/bin/msfdb", "start"], check=True)
+        subprocess.run(["msfdb", "start"], check=True)
+        subprocess.run(["armitage"])
+        output_text.insert(tk.END, "[*] Armitage başlatıldı.\n")
+    except Exception as e:
+        output_text.insert(tk.END, f"[!] Hata: {e}\n")
+
+root = tk.Tk()
+root.title("CyberAlbertou Siber Güvenlik Aracı")
+
+start_button = tk.Button(root, text="Armitage Başlat", command=run_armitage)
+start_button.pack(pady=10)
+
+output_text = scrolledtext.ScrolledText(root, width=80, height=20)
+output_text.pack()
+
+root.mainloop()

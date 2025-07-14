@@ -1,0 +1,106 @@
+from tools import nmap_scanner
+from modules import scanner, bruteforce_ssh, analyzer
+import modules.bot as bot_mod
+import tools.nmap_scanner as nmap_tool
+import modules.analyzer as analyzer_mod
+import modules.bruteforce_ssh as bf_ssh
+import modules.scanner as scanner
+import modules.osint as osint
+from modules import auth  # 💡 Giriş kontrolü
+import modules.exploiter as exploiter  # ✅ Yeni eklenen exploit modülü
+import modules.auto_scan as auto_scan  # <-- Buraya ekledik
+
+def main():
+    if not auth.login():
+        exit()
+
+    analyzer = analyzer_mod.Analyzer()
+
+    print("=== CyberAlbertou Siber Güvenlik Asistanı ===")
+    while True:
+        print("\n1. OSINT Bilgi Topla")
+        print("2. Zafiyet Taraması (SQLi, XSS, LFI)")
+        print("3. Bruteforce Atağı (SSH, FTP, HTTP)")
+        print("4. Nmap Port & Servis Taraması")
+        print("5. Ağ Haritalama & Cihaz Keşfi")
+        print("7. Raporlama")
+        print("8. Bot Yönetimi (Arka Kapı, Komut Kontrol)")
+        print("9. Çıkış")
+        print("10. Otomatik Exploit Tespiti (Searchsploit ile)")
+        print("11. Otomatik Tetikleme (URL, IP ve SSH Brute Force)")  # <-- Yeni menü seçeneği
+	print("12. Tümünü Otomatik Tara (Giriş Gerektirmez, Varsayılan dosyalar)")
+
+
+        choice = input("Seçiminiz: ").strip()
+
+        if choice == "1":
+            osint.basic_osint_menu()
+
+        elif choice == "2":
+            url = input("Test edilecek URL (parametreli): ").strip()
+            if '?' not in url:
+                print("[-] Lütfen parametreli bir URL giriniz! Örnek: https://site.com/page.php?id=1")
+                continue
+            resp = scanner.scan(url)
+            if resp:
+                analyzer.analyze_sql_response(resp)
+                analyzer.show_recommendations()
+            else:
+                print("[-] Tarama sonuçsuz kaldı.")
+
+        elif choice == "3":
+            target = input("Hedef IP adresi: ").strip()
+            bf_ssh.start_bruteforce(target)
+
+        elif choice == "4":
+            ip = input("Tarama yapılacak IP: ").strip()
+            open_ports = nmap_tool.run_scan(ip)
+            if open_ports:
+                analyzer.analyze_ports(open_ports)
+                analyzer.show_recommendations()
+            else:
+                print("[-] Açık port bulunamadı veya hedef erişilemiyor.")
+
+        elif choice == "5":
+            print("[*] Ağ Haritalama modülü yakında eklenecek.")
+
+        elif choice == "6":
+            print("[*] DDoS simülasyonu modülü yakında eklenecek.")
+
+        elif choice == "7":
+            print("[*] Raporlama modülü yakında eklenecek.")
+
+        elif choice == "8":
+            bot_mod.bot_management()
+
+        elif choice == "9":
+            print("Çıkış yapılıyor, görüşürüz!")
+            break
+
+        elif choice == "10":
+            target = input("Hedef IP veya domain girin: ").strip()
+            exploiter.run(target)
+
+        elif choice == "11":  # <-- Yeni otomatik tetikleme seçeneği
+            url_file = input("Test edilecek URL listesi dosyası (parametreli URL'ler): ").strip()
+            ip_file = input("Nmap taraması için IP listesi dosyası: ").strip()
+            ssh_file = input("SSH brute force hedef IP listesi dosyası: ").strip()
+
+            try:
+                with open(url_file, "r") as uf:
+                    urls = [u.strip() for u in uf.readlines() if u.strip()]
+                with open(ip_file, "r") as ipf:
+                    ips = [i.strip() for i in ipf.readlines() if i.strip()]
+                with open(ssh_file, "r") as sf:
+                    ssh_targets = [s.strip() for s in sf.readlines() if s.strip()]
+            except Exception as e:
+                print(f"Dosya okuma hatası: {e}")
+                continue
+
+            auto_scan.auto_scan(urls, ips, ssh_targets)
+
+        else:
+            print("Geçersiz seçim, tekrar deneyin.")
+
+if __name__ == "__main__":
+    main()

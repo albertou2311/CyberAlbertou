@@ -1,0 +1,2 @@
+http://test.com/index.php?id=1
+http://example.com/page.php?item=3

@@ -1,0 +1,9 @@
+aiohttp
+paramiko
+colorama
+pdfkit
+jinja2
+openai
+PyPDF2
+python-docx
+requests

@@ -1,0 +1,46 @@
+# modules/ai_suggestions.py
+import json
+
+def ai_analyze(target):
+    print(f"\n🤖 [AI Analiz] Hedef: {target}")
+
+    try:
+        with open(f"reports/{target.replace('.', '_')}_log.json", "r") as f:
+            data = json.load(f)
+
+        brute = data.get("brute_force", {})
+        ports = data.get("open_ports", [])
+        payloads = data.get("payloads", {})
+        exploits = data.get("exploits", {})
+
+        print("\n🧠 [Yorum]:")
+        if brute.get("success"):
+            print("✅ Brute-force başarılı oldu. Erişim sağlandı.")
+        else:
+            print("❌ Brute-force başarısız. Kullanıcı/parola kombinasyonlarını genişletin.")
+
+        if ports:
+            print(f"🟢 Açık Portlar: {ports}")
+        else:
+            print("🔒 Portlar filtrelenmiş veya kapalı.")
+
+        if "sql" in payloads and payloads["sql"]:
+            print("🚨 SQL Injection tespit edildi!")
+        if "xss" in payloads and payloads["xss"]:
+            print("⚠ XSS açıkları bulundu.")
+        if "lfi" in payloads and payloads["lfi"]:
+            print("📂 LFI açığı mevcut.")
+
+        if exploits.get("success"):
+            print("💥 Exploit başarılı. Erişim veya shell elde edildi!")
+        else:
+            print("🛠 Exploit başarısız. Manuel test önerilir.")
+
+        print("\n📌 [Öneriler]:")
+        if not brute.get("success"):
+            print("- Hydra veya Medusa ile genişletilmiş parola saldırısı deneyin.")
+        if not exploits.get("success"):
+            print("- ExploitDB ve metasploit modülleri ile manuel tarama yapın.")
+
+    except Exception as e:
+        print(f"[AI] Hata: {e}")

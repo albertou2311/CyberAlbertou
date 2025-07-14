@@ -1,0 +1,213 @@
+[2025-07-08 00:08:17] [INFO] Zafiyet taraması başlatılıyor: http://testphp.vulnweb.com/listproducts.php?cat=1
+[2025-07-08 00:08:18] [WARNING] Olası SQL açığı bulundu: http://testphp.vulnweb.com/listproducts.php?cat='
+[2025-07-08 01:08:34] [INFO] Zafiyet taraması başlatılıyor: http://http://test.com/index.php?id=1
+[2025-07-08 01:08:35] [ERROR] İstek hatası: http://http://test.com/index.php?id=' → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /test.com/index.php?id=' (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de757610>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:37] [ERROR] İstek hatası: http://http://test.com/index.php?id='-- → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /test.com/index.php?id='-- (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de7574d0>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:38] [ERROR] İstek hatası: http://http://test.com/index.php?id=" → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /test.com/index.php?id=%22 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de779f30>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:39] [ERROR] İstek hatası: http://http://test.com/index.php?id="-- → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /test.com/index.php?id=%22-- (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de77a650>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:40] [ERROR] İstek hatası: http://http://test.com/index.php?id=<script>alert(1)</script> → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /test.com/index.php?id=%3Cscript%3Ealert(1)%3C/script%3E (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de91af90>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:41] [ERROR] İstek hatası: http://http://test.com/index.php?id=../../../../etc/passwd → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /test.com/index.php?id=../../../../etc/passwd (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75a140>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:41] [INFO] Zafiyet bulunamadı.
+[2025-07-08 01:08:43] [INFO] Zafiyet taraması başlatılıyor: http://http://example.com/page.php?item=3
+[2025-07-08 01:08:44] [ERROR] İstek hatası: http://http://example.com/page.php?item=' → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /example.com/page.php?item=' (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75a580>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:45] [ERROR] İstek hatası: http://http://example.com/page.php?item='-- → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /example.com/page.php?item='-- (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75a7a0>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:46] [ERROR] İstek hatası: http://http://example.com/page.php?item=" → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /example.com/page.php?item=%22 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75a360>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:47] [ERROR] İstek hatası: http://http://example.com/page.php?item="-- → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /example.com/page.php?item=%22-- (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75a9c0>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:49] [ERROR] İstek hatası: http://http://example.com/page.php?item=<script>alert(1)</script> → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /example.com/page.php?item=%3Cscript%3Ealert(1)%3C/script%3E (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75abe0>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:50] [ERROR] İstek hatası: http://http://example.com/page.php?item=../../../../etc/passwd → HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: /example.com/page.php?item=../../../../etc/passwd (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f75de75ae00>: Failed to resolve 'http' ([Errno -2] Name or service not known)"))
+[2025-07-08 01:08:50] [INFO] Zafiyet bulunamadı.
+[2025-07-08 01:08:50] [INFO] Zafiyet taraması başlatılıyor: http://test.com/index.php?id=1
+[2025-07-08 01:08:53] [INFO] Zafiyet bulunamadı.
+[2025-07-08 01:08:53] [INFO] Zafiyet taraması başlatılıyor: http://example.com/page.php?item=3
+[2025-07-08 01:08:55] [INFO] Zafiyet bulunamadı.
+[2025-07-08 01:08:55] [INFO] === SSH Brute-Force Modülü ===
+[2025-07-08 01:32:45] [ERROR] Liste dosyası okunamadı! → [Errno 2] No such file or directory: '\x1b[B\x1b[B\x1b[B\x1b[B\x1b[B\x1b[B\x1b[B\x1b[B\x1b[Bekxit'
+[2025-07-08 02:30:10] [INFO] Zafiyet taraması başlatılıyor: yildirimbilisimelektrik.com
+[2025-07-08 02:30:10] [ERROR] URL parametre içermiyor. Test edilemez.
+[2025-07-08 02:30:10] [INFO] Tarama tamamlandı, zafiyet bulunamadı.
+[2025-07-08 02:30:55] [INFO] Zafiyet taraması başlatılıyor: https://yildirimbilisimelektrik.com
+[2025-07-08 02:30:55] [ERROR] URL parametre içermiyor. Test edilemez.
+[2025-07-08 02:30:55] [INFO] Tarama tamamlandı, zafiyet bulunamadı.
+[2025-07-08 18:09:18] [INFO] Zafiyet taraması başlatılıyor: https://hedefsite.com
+[2025-07-08 18:09:18] [ERROR] URL parametre içermiyor. Test edilemez.
+[2025-07-08 18:09:23] [INFO] === SSH Brute-Force Modülü ===
+[2025-07-08 18:10:58] [ERROR] Liste dosyası okunamadı! → [Errno 2] No such file or directory: 'exit'
+[2025-07-08 18:32:34] [INFO] Zafiyet taraması başlatılıyor: hedefsite.com
+[2025-07-08 18:32:34] [ERROR] URL parametre içermiyor. Test edilemez.
+[2025-07-08 21:10:25] [INFO] Zafiyet taraması başlatılıyor: 34.120.137.41
+[2025-07-08 21:10:25] [ERROR] URL parametre içermiyor. Test edilemez.
+[2025-07-11 13:08:19] [INFO] Zafiyet taraması başlatılıyor: http://testphp.vulnweb.com/listproducts.php?cat=1
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat='-- (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../boot.ini (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=/etc/passwd (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../proc/self/environ (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../proc/self/environ (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=/etc/passwd (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../etc/passwd (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../etc/passwd (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../etc/passwd (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../etc/passwd (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<iframe src='javascript:alert(1)'></iframe> (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<body onload=alert(1)> (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<body onload=alert(1)> (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="'><script>alert(1)</script> (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="'><script>alert(1)</script> (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<img src=x onerror=alert(1)> (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<script>alert(1)</script> (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<script>alert(1)</script> (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1 LIMIT 1-- (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1 LIMIT 1-- (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1/* (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1/* (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR '1'='1 (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1# (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 'a'='a (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' UNION SELECT NULL,NULL,NULL-- (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' UNION SELECT NULL,NULL,NULL-- (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=admin'-- (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=admin'-- (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1-- (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR '1'='1 (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="-- (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=" (HEAD) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=" (GET) → 
+[2025-07-11 13:08:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' (GET) → 
+[2025-07-11 13:08:25] [WARNING] Olası SQL açığı bulundu: http://testphp.vulnweb.com/listproducts.php
+[2025-07-11 13:12:19] [INFO] Zafiyet taraması başlatılıyor: http://testphp.vulnweb.com/listproducts.php?cat=1
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat='-- (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1# (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../boot.ini (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../boot.ini (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../proc/self/environ (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../proc/self/environ (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=/etc/passwd (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=/etc/passwd (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../etc/passwd (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../etc/passwd (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../etc/passwd (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../etc/passwd (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<iframe src='javascript:alert(1)'></iframe> (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<iframe src='javascript:alert(1)'></iframe> (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<body onload=alert(1)> (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<body onload=alert(1)> (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="'><script>alert(1)</script> (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="'><script>alert(1)</script> (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<svg/onload=alert(1)> (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<svg/onload=alert(1)> (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<img src=x onerror=alert(1)> (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<img src=x onerror=alert(1)> (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<script>alert(1)</script> (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<script>alert(1)</script> (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1 LIMIT 1-- (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1 LIMIT 1-- (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1/* (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1/* (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1# (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 'a'='a (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 'a'='a (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' UNION SELECT NULL,NULL,NULL-- (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' UNION SELECT NULL,NULL,NULL-- (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=admin'-- (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=admin'-- (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1-- (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1-- (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR '1'='1 (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR '1'='1 (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="-- (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="-- (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=" (HEAD) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=" (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat='-- (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' (GET) → 
+[2025-07-11 13:12:25] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' (HEAD) → 
+[2025-07-11 13:12:25] [INFO] Zafiyet bulunamadı.
+[2025-07-12 01:19:15] [INFO] Zafiyet taraması başlatılıyor: http://testphp.vulnweb.com/listproducts.php?cat=1
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1# (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../boot.ini (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=/etc/passwd (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../proc/self/environ (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=/etc/passwd (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../etc/passwd (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../../etc/passwd (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../etc/passwd (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=../../../../etc/passwd (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<iframe src='javascript:alert(1)'></iframe> (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<body onload=alert(1)> (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<body onload=alert(1)> (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="'><script>alert(1)</script> (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="'><script>alert(1)</script> (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<svg/onload=alert(1)> (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<img src=x onerror=alert(1)> (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=<script>alert(1)</script> (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1 LIMIT 1-- (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1 LIMIT 1-- (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1/* (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1/* (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' UNION SELECT NULL,NULL,NULL-- (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' UNION SELECT NULL,NULL,NULL-- (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=admin'-- (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=admin'-- (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1-- (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' OR 1=1-- (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="-- (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat="-- (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=" (HEAD) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php (POST) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=" (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat=' (GET) → 
+[2025-07-12 01:19:21] [ERROR] HTTP isteği hatası: http://testphp.vulnweb.com/listproducts.php?cat='-- (GET) → 
+[2025-07-12 01:19:21] [WARNING] Olası SQL açığı bulundu: http://testphp.vulnweb.com/listproducts.php

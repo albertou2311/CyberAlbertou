@@ -1,0 +1,7 @@
+import nmap
+
+def is_ssh_accessible(ip):
+    scanner = nmap.PortScanner()
+    scanner.scan(ip, '22')
+    state = scanner[ip]['tcp'][22]['state']
+    return state == 'open'

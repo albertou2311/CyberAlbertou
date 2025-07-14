@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Thu Jul 10 22:07:58 2025 as: /usr/lib/nmap/nmap --privileged -sV -sC -T4 -Pn -oN loot/hedefsite.com/nmap.txt hedefsite.com
+Failed to resolve "hedefsite.com".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Thu Jul 10 22:08:03 2025 -- 0 IP addresses (0 hosts up) scanned in 5.53 seconds

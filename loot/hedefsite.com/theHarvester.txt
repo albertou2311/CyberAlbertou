@@ -1,0 +1,179 @@
+Read proxies.yaml from /etc/theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.8.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: hedefsite.com 
+
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for DNSDumpster. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Dehashed. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for DNSDumpster. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+Error initializing SearchGithubCode: 
+[93m[!] Missing API key for Github. [0m
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for whoisxml. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+An exception has occurred in HaveIBeenPwned search: 'haveibeenpwned'
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+An exception has occurred in LeakLookup search: 'leaklookup'
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+An exception has occurred in SecurityScorecard search: 'securityscorecard'
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+An exception has occurred in BuiltWith search: 'builtwith'
+Read api-keys.yaml from /etc/theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Venacus. [0m
+	Searching 0 results.
+[94m[*] Searching Bing. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception has occurred: Server disconnected
+[94m[*] Searching CRTsh. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: Server disconnected
+[94m[*] Searching Duckduckgo. 
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+An exception has occurred: Server disconnected
+[94m[*] Searching Baidu. 
+[94m[*] Searching Hackertarget. 
+[94m[*] Searching Otx. 
+[94m[*] Searching Rapiddns. 
+[94m[*] Searching Subdomaincenter. 
+Sitedossier module has triggered a captcha on first iteration, no results can be found.
+Change IPs, manually solve the captcha, or wait before rerunning Sitedossier module
+[94m[*] Searching Sitedossier. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=hedefsite.com&rt=5'
+[94m[*] Searching Urlscan. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: Cannot connect to host search.yahoo.com:443 ssl:<ssl.SSLContext object at 0x7f5a8dd1f2f0> [None]
+An exception has occurred: Cannot connect to host search.yahoo.com:443 ssl:<ssl.SSLContext object at 0x7f5a8dd1e570> [None]
+An exception has occurred: Cannot connect to host search.yahoo.com:443 ssl:<ssl.SSLContext object at 0x7f5a8dd1df40> [None]
+An exception has occurred: Cannot connect to host search.yahoo.com:443 ssl:<ssl.SSLContext object at 0x7f5a8ddaa4e0> [None]
+An exception has occurred: Cannot connect to host search.yahoo.com:443 ssl:<ssl.SSLContext object at 0x7f5a8dd1f260> [None]
+An exception has occurred: Cannot connect to host search.yahoo.com:443 ssl:<ssl.SSLContext object at 0x7f5a8dd1f380> [None]
